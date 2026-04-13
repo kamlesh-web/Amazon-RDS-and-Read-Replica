@@ -22,7 +22,7 @@ The guide selected **MariaDB** (a popular open-source MySQL-compatible engine). 
 
 ### Step 5 – Select **"Full configuration"** (instead of Easy create).  
 "Easy create" uses pre-set defaults with very few options. Full configuration gives you full control over instance size, storage, networking, backups, encryption, etc.
-<img width="1362" height="765" alt="image" src="https://github.com/user-attachments/assets/8fe2b651-49f2-4016-9a9d-9ed66d919ec0" />
+<img width="1362" height="765" alt="image" src="https://github.com/user-attachments/assets/f1ea26df-522a-4e78-a894-a3b902955a0a" />
 
 ### Step 6 – Choose the **Engine type** and **Engine version**.  
 - Engine: MariaDB  
@@ -30,23 +30,23 @@ The guide selected **MariaDB** (a popular open-source MySQL-compatible engine). 
 You can select any supported version from the dropdown.
 <img width="1362" height="765" alt="image" src="https://github.com/user-attachments/assets/bb9a91f9-06f0-4b54-94af-2c98356a6798" />
 
-### Step 7 – Scroll down and confirm the engine version (11.4.5 is shown as selected).
+### Step 7 – Scroll down and choose the engine version. We went with "MariaDB 11.4.5".
 <img width="1362" height="765" alt="image" src="https://github.com/user-attachments/assets/0641667a-d1aa-4ffc-9fc7-0e5bca9573e7" />
 
 ### Step 8 – Give your database a name in the **DB instance identifier** field.  
 Default is something like "database-1". The guide changed it to **"my-database"** for clarity and easier identification later.
-<img width="1362" height="765" alt="image" src="https://github.com/user-attachments/assets/ca0a8d4b-bb43-487f-a117-38ec1917ecd2" />
+<img width="1362" height="765" alt="image" src="https://github.com/user-attachments/assets/1f4d026b-3580-415d-94c8-a86e6bff2b74" />
 
 ### Step 9 – In **Credentials Settings**:  
 - Leave **Master username** as the default (**admin**) or change it.  
 - Under **Credentials management**, choose **Self managed** (so you create and know the password yourself).
-<img width="1362" height="765" alt="image" src="https://github.com/user-attachments/assets/da2105e0-bd2d-4725-b9a5-b974c280e0e9" />
+<img width="1362" height="765" alt="image" src="https://github.com/user-attachments/assets/e2a95eba-08d2-4ee1-b957-ebe3dd917ba9" />
 
 ### Step 10 – Set a strong **Master password**.  
 - Type the password.  
 - Confirm it in the next field.  
 - AWS shows a password strength meter, make sure it is strong (mix of letters, numbers, symbols).
-<img width="1362" height="765" alt="image" src="https://github.com/user-attachments/assets/06c28d4b-ae4d-4c83-85c4-4dbd9b7ad6e9" />
+<img width="1362" height="765" alt="image" src="https://github.com/user-attachments/assets/81cc70f0-b0e5-4119-b5de-2f843b4d72fc" />
 
 ### Step 11 – **Instance configuration** section:  
 - Choose **Burstable classes** (this was the only free-tier eligible option).  
@@ -102,15 +102,13 @@ This creates an actual database inside the RDS instance when it launches.
 
 ### Step 22 – Click **Refresh** periodically on the Databases list until the status changes from **Creating** to **Available**.
 <img width="1362" height="765" alt="image" src="https://github.com/user-attachments/assets/bd372e62-6df2-408c-afaa-533abc71570f" />
-
+---
 
 
 ## Part 2: Creating a Read Replica
 
-### Step 23 – Once your primary database shows **Available**, you can create a read replica for read-heavy workloads.
-<img width="1362" height="765" alt="image" src="https://github.com/user-attachments/assets/d613bd3e-a243-407c-bf9f-ef4dbc17f7f2" />
-
-### Step 24 – What is a Read Replica?  
+### Step 23 
+– What is a Read Replica?  
 Read replicas are read-only copies of a primary database, primarily used to enhance performance by offloading read traffic from the main database. They enable horizontal scaling of read-heavy workloads, decrease read latency by serving data from closer geographical locations, and can be promoted to standalone, writable databases if needed
 
 Benefits:  
@@ -118,6 +116,10 @@ Benefits:
 - Horizontal scaling for read-heavy apps.  
 - Lower latency if placed in a different region/AZ.  
 - Can be promoted to a full writable database later if needed.
+
+### Step 24 
+– Once your primary database shows **Available**, you can create a read replica for read-heavy workloads.
+<img width="1362" height="765" alt="image" src="https://github.com/user-attachments/assets/d613bd3e-a243-407c-bf9f-ef4dbc17f7f2" />
 
 ### Step 25 – Click the **text link** of your primary database (**my-database**).
 <img width="1362" height="765" alt="image" src="https://github.com/user-attachments/assets/8e72aff5-3f69-48f6-89d7-7b959d1c237f" />

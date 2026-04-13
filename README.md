@@ -1,6 +1,7 @@
 # How to create an Amazon RDS and Read Replica
 
 **Here's a detailed, step-by-step explanation of the entire process** to create an Amazon RDS MariaDB instance and then add a Read Replica.
+<img width="1207" height="679" alt="screenshot_20260413142442" src="https://github.com/user-attachments/assets/9a7ee432-ef29-45b6-80b5-6d6a11a3c7a4" />
 
 ### Step 1 
 – Click on the search box at the top of the AWS Management Console and type **"database"**.  

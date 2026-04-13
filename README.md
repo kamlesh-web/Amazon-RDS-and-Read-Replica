@@ -9,7 +9,7 @@ This opens the service search results. AWS shows popular database-related servic
 <img width="1362" height="765" alt="image" src="https://github.com/user-attachments/assets/19258e8d-c7fb-428b-9b46-07e06f1b2f8b" />
 
 ### Step 2 
-- Click **"Show more"** under the Services section.  
+– Click **"Show more"** under the Services section.  
 This expands the full list so you can see every database service.
 
 <img width="1362" height="765" alt="image" src="https://github.com/user-attachments/assets/1f5eff44-2f8f-4442-99bf-354cacfc9ce4" />
@@ -143,6 +143,7 @@ This creates an actual database inside the RDS instance when it launches.
 ### Step 22 
 – Click **Refresh** periodically on the Databases list until the status changes from **Creating** to **Available**.
 <img width="1362" height="765" alt="image" src="https://github.com/user-attachments/assets/bd372e62-6df2-408c-afaa-533abc71570f" />
+
 ---
 
 
